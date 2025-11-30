@@ -24,6 +24,7 @@
     <ProjectGuid>{d7441e16-61ab-40b0-bc28-9282b67ae835}</ProjectGuid>
     <RootNamespace>EmployeeStoringData</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>EmployeeStoringData</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
