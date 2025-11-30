@@ -1,2 +1,2 @@
 ## Goal 🏁
-My goal here is to be able to understand imploment the things I learned from C++. I'm talking about the basics and maybe also I might learn something a long the way.
+My goal here is to be able to understand Data Analytics and implement the things I learned from my Class C++ and BroCode Youtube Channel. I'll be doing just the basics, and I might learn something new a long the way. 
