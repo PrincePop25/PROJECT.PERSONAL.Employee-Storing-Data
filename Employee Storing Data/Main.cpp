@@ -7,35 +7,37 @@
 
 #include <iostream>
 #include <fstream>
-#include <string>
+#include <sstream>
+
 
 
 int main(int argc, char* argv[])
 {
-
+	//## Testing
 	std::cout << "argc: " << argc << std::endl;	
 	
 	std::cout << "argv[1]: " << argv[1] << std::endl;
 
-	//variables
+	//## File Opening
 	std::ifstream myFile(argv[1]); //Opening the csv file
-	std::string holdthis; 
-
 
 	
-	//Reading The File
-	char test;
+	//## Variables of where data will be stored
+	std::string holdSITF;
 	std::string hold;
 
-	while (myFile.get(test))
+	
+	//## Reading The File
+	while (getline(myFile, hold)) //Gets all the line the the CSV file stores it in hold, 
+		//and loops back and do the same thing again
 	{
-		hold.append(1, test);
-		std::cout << hold << std::endl;
-		break;
-	}
+		std::stringstream ss(hold); //Its the same as this -> ss << hold;
+		
+		getline(ss, holdSITF, ','); //The 3rd parameter is the delimiter, which is a comma in this case
 
-	
-	
+		//Outputting the data stored in holdSITF
+		std::cout << "holdSITF: " << holdSITF << std::endl;
+	}
 
 
 	myFile.close();
